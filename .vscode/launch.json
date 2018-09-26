@@ -8,8 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Запустить Chrome для localhost",
-            //"url": "D:/git/HtmlTest/PhaserMase2d/index.html",
-            "url": "D:/git/HtmlTest/PhaserMase2d/index.html",
+             "url": "D:/git/shtolce.github.io/index.html",
             "webRoot": "${workspaceFolder}",
             "runtimeArgs":[
                 "--disable-web-security"]
