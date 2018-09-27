@@ -54,6 +54,7 @@ Ball.Game.prototype = {
     },
     wallCollision: function() {},
     handleOrientation: function(e) {
+            alert(1);
             var x = e.gamma;
             var y = e.beta;
             Ball._player.body.velocity.x += x;
