@@ -50,7 +50,7 @@ Ball.Game.prototype = {
 
         }
 
-//
+
 
     },
     wallCollision: function() {},
