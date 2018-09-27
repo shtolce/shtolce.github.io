@@ -22,6 +22,7 @@ Ball.Game.prototype = {
         this.keys = this.game.input.keyboard.createCursorKeys();
         Ball._player = this.ball;
         window.addEventListener("deviceorientation",this.handleOrientation,true);
+        window.addEventListener("devicemotion",this.handleOrientation,true);
     
     
     },
