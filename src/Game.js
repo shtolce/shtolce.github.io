@@ -61,8 +61,7 @@ Ball.Game.prototype = {
      
             var x = e.gamma;
             var y = e.beta;
-            alert(e.gamma);
-            alert(y);
+ 
             Ball._player.body.velocity.x += x;
             Ball._player.body.velocity.y += y;
     },
