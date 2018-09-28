@@ -14,6 +14,9 @@
     </head>
     <body>
         <script>
+         alert(window.DeviceOrientationEvent.acceleration);
+         alert(window.DeviceMotionEvent.acceleration); 
+  
             (function(){
             var game=new Phaser.Game(320,480,Phaser.CANVAS,'game');
             game.state.add('Boot',Ball.Boot);
