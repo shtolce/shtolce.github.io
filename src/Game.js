@@ -20,11 +20,10 @@ Ball.Game.prototype = {
         this.ball.body.setSize(18,18);
         this.ball.body.bounce.set(0.3,0.3);
         this.keys = this.game.input.keyboard.createCursorKeys();
-        Ball._player = this.ball;
-
-
+		Ball._player = this.ball;
+		//window.addEventListener("deviceorientation", this.handleOrientation, true);
         //window.addEventListener("deviceorientation",this.handleOrientation,false);
-        window.addEventListener("devicemotion",this.handleOrientation,false);
+        window.addEventListener("devicemotion",this.handleOrientation,true);
     
     
     },
@@ -57,9 +56,9 @@ Ball.Game.prototype = {
     },
     wallCollision: function() {},
     handleOrientation: function(e) {
-     
             var x = e.acceleration.gamma;
             var y = e.acceleration.beta;
+            alert(x);
  
             Ball._player.body.velocity.x += x;
             Ball._player.body.velocity.y += y;
