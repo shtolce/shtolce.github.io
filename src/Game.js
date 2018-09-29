@@ -23,8 +23,8 @@ Ball.Game.prototype = {
         Ball._player = this.ball;
 
 
-        window.addEventListener("deviceorientation",this.handleOrientation,true);
-        window.addEventListener("devicemotion",this.handleOrientation,true);
+        //window.addEventListener("deviceorientation",this.handleOrientation,false);
+        window.addEventListener("devicemotion",this.handleOrientation,false);
     
     
     },

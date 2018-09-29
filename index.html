@@ -14,8 +14,12 @@
     </head>
     <body>
         <script>
-         alert(DeviceOrientationEvent);
-         alert(window.DeviceMotionEvent); 
+if (window.DeviceMotionEvent) {
+   
+    aert(yes);
+} else {
+   alert('NO');
+} 
   
             (function(){
             var game=new Phaser.Game(320,480,Phaser.CANVAS,'game');
